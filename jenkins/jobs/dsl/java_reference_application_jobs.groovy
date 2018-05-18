@@ -127,6 +127,7 @@ codeAnalysisJob.with {
         stringParam("B", '', "Parent build number")
         stringParam("PARENT_BUILD", "Reference_Application_Build", "Parent build name")
         stringParam("UTB", '', "Unit Tests job build number")
+        stringParam("QualityGateName", 'accenture-java-standards', "This is the quality gate used for static code analysis")
     }
     environmentVariables {
         env('WORKSPACE_NAME', workspaceFolderName)
